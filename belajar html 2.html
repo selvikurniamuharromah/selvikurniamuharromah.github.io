@@ -1,0 +1,572 @@
+<html>
+	<head>
+		<title>splsv</title>
+		<style type="text/css"> h1 { color: green;}
+	h2 {color: blueviolet;}
+	body { background-color: powderblue;}
+	.align { text-align: center; }
+	.float-tengah { float: center ; }
+	.align-rata { text-align: justify; }
+	.align.kanan { text-align: right; }
+
+	</style>
+	</head>
+
+	<body>
+		<h1 class="align">SISTEM PERSAMAAN DAN PERTIDAKSAMAAN LINEAR SATU VARIABEL</H1>
+		<img src="https://3.bp.blogspot.com/-fjyt62BprkY/W4_UUsefwSI/AAAAAAAAAfY/rhGWbzf9kb03Pql6ez0uT1QG1QB7MiovgCLcBGAs/s1600/Screenshot_22.png" style="display: block;margin: auto;"> 
+		<p class="align">Selvi Kurnia Muharromah </p> 
+		<p class="align">Dosen pengampu:</p>
+		<p class="align">Aan Hendrayana</p>
+		<p class="align">UNTIRTA PRESS</p>
+
+		<h1 class="align"> KATA PENGANTAR </h1>
+		<p class="align-rata">Puji syukur kami panjatkan atas kehadirat Allah SWT. Serta kepada junjungan Nabi kita Muhammad SAW karena atas berkat rahmat, berkah, dan rihdonya kami dapat menyelesaikan bahan ajar ini dengan judul “Sistem Persamaan Dan Pertidaksamaan Linear Satu Variabel” sebagai pendukung pembelajaran untuk tingkat SMP dan kami berterimakasih kepada bapak Dr.Aan Hendrayana,S.Si, M.pd. selaku dosen mata kuliah pengembangan multimedia matematika yang sudah memberikan tugas ini.</p>
+		<p class="align-rata">Kami sangat berharap semoga bahan ajar ini dapat bermanfaat bagi para pembaca untuk menambah wawasan dan pengetahuan sehingga menjadi materi yang penting bagi siswa sekolah menengah pertama (SMP). Kami juga menyadari sepenuhnya bahwa bahan ajar ini masih memiliki banyak kekurangan dan jauh dari kesempurnaan, dan penulis sangat mengharapkan kritik dan saran yang membangun di masa yang akan datang. Ingat, tidak ada yang sempurna tanpa nasihat yang membangun. Semoga makalah sederhana ini dapat bermanfaat bagi siapa saja yang membacanya. Kami mohon maaf sebelumnya atas kesalahan tata bahasa dan penulisan yang tidak sesuai.</p>
+		<p center="align-kanan">Serang, Maret 2022</p>
+
+		<h1 class="align">DAFTAR ISI</h1>
+		<p>KATA PENGANTAR......................................................................................................................i</p>
+		<p>DAFTAR ISI..........................................................................................................................ii</p>
+		<p>DAFTAR GAMBAR.......................................................................................................................iv</p>
+		<p>DAFTAR TABEL........................................................................................................................v</p>
+		<p>PETA KONSEP.........................................................................................................................vi</p>
+		<p>PENDAHULUAN.........................................................................................................................1</p>
+		<p>1.1	LATAR BELAKANG.................................................................................................................1</p>
+		<p>1.2	RUMUSAN MASALAH................................................................................................................2</p>
+		<p>1.3	TUJUAN.........................................................................................................................2</p>
+		<p>SISTEM PERSAMAAN LINEAR SATU VARIABEL...............................................................................................3</p>
+		<p>2.1 Kalimat Tebuka Dan Tertutup.....................................................................................................3</p>
+		<p>2.2 Pengertian Persamaan Linear Satu Variabel.......................................................................................7</p>
+		<p>2.3	Cara Penyelesaian Persamaan Linear Satu Variabel...............................................................................9</p>
+		<p>2.4 RINGKASAN.......................................................................................................................11</p>
+		<p>2.5 LATIHAN.........................................................................................................................12</p>
+		<p>3.5	EVALUASI.......................................................................................................................29</p>
+		<p>DAFTAR PUSTAKA......................................................................................................................31</p>
+		<p>GLOSARIUM...........................................................................................................................32</p>
+		<p>INDEKS..............................................................................................................................33</p>
+
+		<h1 class="align">DAFTAR GAMBAR</h1>
+		<p>Gambar 1 persamaan linear satu variabel...............................................................................................7</p>
+		<p>Gambar 2 contoh gambar pertidaksamaanpada sehari-hari................................................................................15</p>
+		<p>Gambar 3 pertidaksamaan menggunakan berat pada benda.................................................................................16</p>
+		<p>Gambar 4 garis bilangan..............................................................................................................16</p>
+		<p>Gambar 5. grafik pertidaksamaan linear satu variabel.................................................................................22</p>
+
+		<h1 class="align">DAFTAR TABEL</h1>
+		<p>Table 1. persamaan dan pertidaksamaan.................................................................................................5</p>
+		<p>Table 2. kesamaan dan ketidaksamaan...................................................................................................6</p>
+
+		<h1 class="align">PETA KONSEP</h1>
+		<img src="peta konsep.png" style="display: block;margin: auto;">
+
+	<h1 class="align">PENDAHULUAN</h1>
+	<h2>1.1	LATAR BELAKANG </h2>
+		<p class="align-rata">Berdasarkan Standar Kompetensi dan Kompetensi Dasar Tingkat SD / MI yang terdapat pada Peraturan Menteri Pendidikan Nasional Nomor 22 Tahun 2006 tentang Standar Isi untuk satuan pendidikan dasar dan menengah bahwa matematika merupakan ilmu yang universal serta dapat dijadikan sebagai dasar dalam perkembangan teknologi modern, serta berperan penting dalam berbagai macam disiplin ilmu dan memajukan daya pikir manusia. Aljabar adalah cabang matematika yang identik dengan simbol, lambang, notasi, variabel, persamaan dan pertidaksamaan. Bahan ajar ini berisi langkah awal untuk menyelesaikan persamaan linear satu variabel (PLSV) dan pertidaksamaan linear satu variabel (PtLSV). Dalam bahan ajar ini, membahas  hal yang mendasar tentang langkah-langkah menentukan himpunan penyelesaikan dari PLSV dan PtLSV serta menyelesaikan masalah kontekstual dengan menggunakan PLSV dan PtLSV (Ponidi. S.Pd., 2020). Persamaan linear satu variabel adalah persamaan dalam bentuk kaliamt terbuka, dihubungkan dengan symbol “=” (sama dengan), dan hanya memiliki satu variabel. Sedangkan pertidaksamaan linear satu variabel juga merupakan kalimat terbuka, yang kebenarannya tidak jelas, dan PTLSV juga menerapkan imperative yang sama kiri dan kanan. Adapun banyak masalah dalam kehidupan sehari-hari dapat diungkapkan dengan system persamaan. Misalnya yaitu masalah salam deskripsi pengantar bahan, yang merupakan system persamaan linear. Jika pengusaha sudah mengetahui harga keseluruhan bahan baku, maka ia akan dapat menghitung harga satuan bahan baku tersebut. </p>
+		<p class="align-rata">Soal cerita adalah suatu permasalahan yang banyak ditemukan dan biasanya permasalahan itu diambil dari masalah-masalah kehidupan sehari-hari. Turmudi (2008) berpendapat bahwa matematika erat kaitannya dengan masalah agar siswa dapat dengan cepat menerapkan matematika dalam kehidupan sehari-hari di dunia kehidupan atau pekerjaan yang akan datang. berdasarkan hal-hal Dalam hal ini banyak siswa yang terkadang kesulitan mengerjakan soal cerita dengan materi persamaan dan pertidaksamaan linear satu variabel, hal ini terlihat pada kesalahan siswa dalam menyelesaikan soal cerita. Masih banyak siswa yang menjawab salah, dan belum menemukan caranya perbaiki agar masalah tidak teratasi dengan baik dengan Sejauh mana kesalahan siswa dalam memecahkan masalah cerita dapat diukur menguasai materi siswa. Oleh karena itu, jika siswa dapat mengetahui akan kesalahannya, tentu akan lebih mudah mencari solusinya pula dan selanjutnya siswa dapat meningkatkan pengusaan materinya. (Jumiati et al., 2020)</p>
+	<h2>1.2	RUMUSAN MASALAH </h2>
+		<p>1.	Apa itu persamaan dan pertidakasamaan linear satu variabel?</p>
+		<p>2.	Bagaimana contoh soal dari persamaan dan pertidaksamaan linear satu variabel ?</p>
+		<p>3.	Bagaimana cara menyelesaikan persamaan dan pertidaksamaan linear satu variabel ?</p>
+	<h2>1.3	TUJUAN</h2>
+		<p>1.	Untuk mengetahui apa itu persamaan dan pertidaksamaan linear satu variabel.</p>
+		<p>2.	Untuk mengetahui ciri dari berbagai jenis persamaan dan pertidaksamaan linear satu variabel.</p>
+		<p>3.	Untuk mengetahui bentuk soal dari persamaan dan pertidaksaam linear satu variabel. </p>
+
+	<h1 class="align">SISTEM PERSAMAAN LINEAR SATU VARIABEL</h1>
+	<h2>2.1 Kalimat Tebuka Dan Tertutup</h2>
+		<p>Kalimat terbuka adalah kalimat yang belum diketahui nilai kebenarannya. Kalimat terbuka terbagi menjadi dua macam yaitu persamaan dan pertidaksamaan</p>
+		<p>Contoh kalimat : </p>
+		<p>1.	Kalimat yang tidak dapat dinilai kebenarannya, yaitu: </p>
+		<p>-	Siapakah presiden pertama Republik Indonesia?
+		<p>-	Siapakah pencipta lagu Indonesia Raya?</p>
+		<p>-	Suatu bilangan jika dikalikan dua kemudian dikurangi tiga menghasilkan tujuh.</p>
+		<p>-	Suatu bilangan jika dikalikan oleh dua pertiga kemudian dikurangi oleh dua kalinya dan dikurangi satu sama dengan tujuh. </p>
+		<p>Kalimat-kalimat tersebut merupakan kalimat yang tidak dapat dinilai benar atau salah. </p>
+		<p>2.	Kalimat yang bernilai benar.</p>
+		<p>-	 Presiden pertama Republik Indonesia adalah Ir. Soekarno.</p>
+		<p>-	Lima dikali dua kemudian dikurangi tiga sama dengan tujuh.</p>
+		<p>3.	Kalimat yang bernilai salah</p>
+		<p>-    Pencipta lagu Indonesia Raya adalah Kusbini. </p>
+		<p>-	Enam dikali dua pertiga kemudian dikurangi oleh dua kali enam dan dikurangi satu hasilnya tujuh.</p>
+		<p>Agar mudah di pahami, kita ubah kalimat pada nomor 3 menjadi bentuk aljabar  jika x adalah suatu bilangan.</p>
+		<p><em>“Suatu bilangan jika dikalikan oleh dua pertiga kemudian dikurangi oleh dua kalinya dan dikurangi satu sama dengan tujuh.”</em></p>
+		<p>x . 2/3 -2x-1 = 7</p>
+		<p>atau</p>
+		<p>2x – 6x – 1 = 21</p>
+		<p>     4x -1 = 21</p>
+		<p>Maka bentuk aljabar -4x – 1=21, akan disebut kalimat terbuka apabila variabel x tidak diketahui nilainya. Tapi jika x diganti dengan suatu bilangan, maka disebut kalimat pernyataan karena akan di ketahui nilainya benar atau salah.</p>
+		<p>Perhatikan contoh-contoh kalimat terbuka berikut.</p>
+		<p>a.	x -7 = 9</p>
+		<p>b.	4 + b > 10</p>
+		<p>c.	4x – 2 = 6 - 8x</p>
+		<p>d.	2a – 4 < 31</p>
+		<P>e.	x + 10y = 100</P>
+		<P>f.	m = 8</P>
+		<P>g.	2p = 10</P>
+		<P>h.	-3y - 3 = 4y + 8</P>
+		<P>i.	13 - 2m ≤ 9m</P>
+		<P>j.	x² - 4 = 0</p>
+		<p>kalimat -kalimat terbuka pada di atas memiliki variabel, kedua sisi dihubungkan oleh tanda sama dengan (=) atau pertidaksamaan (<, >, <, ≥) dan dapat digolongkan sebagai berikut. (Abdur Rahman As'ari, 2017)</p>
+		<p>a.	Bentuk (a), (c), (f), (g) dan (h) merupakan persamaan linear satu variabel (PLSV).</p>
+		<p>b.	Bentuk (e) merupakan persamaan linear dengan dua variabel.</p>
+		<p>c.	Bentuk (j) merupakan persamaan kuadrat dengan satu variabel.</p>
+		<p>d.	Bentuk (b), (d), dan (i) merupakan pertidaksamaan linear satu variabel.</p>
+		<p>1.	Dua dikurang m sama dengan satu.</p>
+		<p>Merupakan kalimat terbuka karena memiliki variabel yaitu m</p>
+		<p>2.	y adalah bilangan prima yang lebih dari empat.</p>
+		<p>Merupakan kalimat terbuka yang memiliki variabel y.</p>
+		<p>3.	x + 7 = 9</p>
+		<p>Merupakan kalimat terbuka karena memiliki variabel.x</p>
+		<p>4.	4 + b > 10 .</p>
+		<p>Merupakan kalimat terbuka karena memiliki variabel b.</p>
+		<p>5.	2a - 4 < 31</p>
+		<p>Merupakan kalimat terbuka karena memiliki variabel a.</p>
+		<p>Suatu kalimat terbuka yang memiliki variabel harus diganti oleh satu atau lebih anggota dari himpunan semesta yang didefinisikan, sehingga kalimat terbuka yang diberikan akan menjadi benar. Pengganti variabel tersebut dinamakan selesaian. Himpunan semua selesaian dalam kalimat terbuka disebut himpunan selesaian.</p>
+	<h5>Table 1. persamaan dan pertidaksamaan </h5>
+		<table border="1">
+			
+			<thead>
+				<tr>
+					<th>persamaan</th>
+					<th>pertidaksamaan</th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Kalimat matematika terbuka yaitu dihubungkan dengan 	tanda sama dengan (=).
+						Contoh:
+						7 – y = 12,
+						4x – 1 = 11</td>
+					<td>Kalimat matematika terbuka yaitu dihubungkan dengan tanda >, ≥, <, atau ≤.
+ 					Contoh :
+					3x < 18,
+					5y-6 > 4,
+					3- 7x ≤ 24</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+
+			<p>Kalimat tertutup adalah kalimat yang sudah diketahui nilai kebenarannya. Kalimat tertutup terbagi menjadi dua macam yaitu kesamaan dan ketidaksamaan. </p>
+			<p>Contoh kalimat tertutup :</p>
+			<p>1.	Ibukota dari Jawa barat adalah Jakarta (kalimat tertutup yang bernilai salah, karena ibukota dari Jawa Barat adalah Bandung)</p>
+			<p>2.	Matahari terbit di sebelah timur (kalimat tertutup bernilai benar)</p>
+
+	<h5>Table 2. kesamaan dan ketidaksamaan  </h5>
+		<table border="1">
+			
+			<thead>
+				<tr>
+					<th>kesamaan</th>
+					<th>ketidaksamaan</th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Kalimat tertutup yaitu dihubungkan dengan tanda (=) dan nilai kebenaran selalu benar.
+					Contoh :
+					(x+2)^2= x^2 + 4x + 4,
+					5x = 3x + 2x</td>
+					<td>Kalimat tertutup yaitu dihubungkan dengan tanda (>, ≥, <, atau ≤) dan nilai kebenaran selalu benar.
+					Contoh:
+					5 < 15, 
+					7 ≥ 5 – 1</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+
+
+			<h4>Apa Perbedaan Persamaan Dan Kesamaan ?</h4>
+				<p>Perbedaan persamaan dan kesamaan adalah terletak pada pernyaaan. Kalua persamaan itu memakai kalimat terbuka sedangkan kesamaan itu memakai kalimat tertutup. </p>
+			<h2>Pengertian Persamaan Linear Satu Variabel</h2>
+			<img src="https://1.bp.blogspot.com/-Q00QduGfZ58/YR_COHly7DI/AAAAAAAAGqc/broldP-DNrcpA1H_EUZtU3ySj2KwF-vVwCLcBGAsYHQ/s466/Capture.PNG">
+			<h5>Gambar 1 persamaan linear satu variabel </h5>
+				<p>Perhatikan persamaan-persamaan berikut. </p>
+				<p>1. 2x + 5 = 3 </p>
+				<p>2. 1 – 2y = 6 </p>
+				<p>3. z + 1 = 2z</p>
+				<p>Variabel pada persamaan (1) adalah x, pada persamaan (2) adalah y, dan pada persamaan (3) adalah z. Persamaan-persamaan di atas merupakan contoh bentuk persamaan linear satu variabel, karena masing-masing persamaan memiliki satu variabel dan berpangkat satu. Variabel x, y, dan z adalah variabel pada himpunan tertentu yang ditentukan dari masing-masing persamaan tersebut. </p>
+				<p></p>
+				<p></p>
+				<p>Persamaan linear satu variabel dapat dinyatakan dalam bentuk ax = b atau ax + b = c dengan a, b, dan c adalah konstanta, a ≠ 0, dan x variabel pada suatu himpunan. </p>
+				<p>-	Sifat penjumlahan dan pengurangan :</p>
+				<p>Jika  𝑎 = 𝑏 maka 𝑎 + 𝑐 = 𝑏 + c</p>
+				<p>Jika 𝑎 = 𝑏 maka 𝑎 - 𝑐 = 𝑏 – c</p>
+				<p>-	Sifat perkalian dan pembagian : </p>
+				<p>Jika 𝑎 = b, c ≠ 0, c  R maka 𝑎𝑐 = 𝑏c</p>
+				<p>Jika 𝑎 = b, c ≠ 0, c  R maka a/c = b/c</p>
+
+				<p>Cara menentukan himpunan penyelesaian (HP) dari PLSV bisa dilakukan dengan mencari persamaan ekuivalen. Persamaan ekuivalen merupakan persamaan dengan himpunan solusi yang sama jika persamaan dapat dimasukan ke persamaan yang ekuivalen yaituu dengan cara :</p>
+				<p>1.	Tambahkan dan kurangi angka yang sama di kedua sisi.</p>
+				<p>2.	Kalikan atau bagi kedua ruas dengan bilangan bukan nol yang sama.</p>
+
+				<p>Langkah-langkah untuk menyelesaikan PLSV adalah sebagai berikut :</p>
+				<p>1.	Dengan menggunakan penjumlahan atau pengurangan dari suatu persamaan, kumpulkan suku-suku yang mengandung variabel di satu sisi (kiri) dan konstanta di sisi lain (kanan).</p>
+				<p>2.	Sederhanakan bentuk operasi yang terbentuk pada masing-masing segmen tersebut.</p>
+				<p>3.	Jika koefisien variabel yang diperoleh dari Langkah 2 ≠ 1   kemudian dikalikan atau dibagi kedua ruas dengan bilangan yang sama,maka dapat diperoleh koefisien satu dari variabel tersebut.</p>
+				<p>Dalam menyelesaikan persamaan linear satu variabel, tujuannya yaitu menyederhanakan persamaan untuk menyisakan variabel saja di salah satu sisi. Setiap langkah yang digunakan untuk menyederhanakan persamaan menghasilkan persamaan ekuivalen. Apakah yang dimaksud dengan persamaan ekuivalen?</p>
+				<p>Perhatikan persamaan-persamaan berikut.</p>
+				<p>1.	x + 1= 3</p>
+				<p>2.	x + 2 = 4</p>
+				<p>3.	2x – 2 = 6</p>
+
+				<p>Ketiga persamaan berikut mempunyai himpunan penyelesaian yang sama. Persamaan persamaan di atas disebut dengan persamaan yang ekuivalen atau persamaan yang setara. Persamaan yang ekuivalen dapat dimodelkan sebagai timbangan yang seimbang kemudian kedua lengan ditambah atau dikurangi oleh beban yang sama, namun timbangan masih dalam keadaan seimbang.</p>
+
+			<h2>2.3	Cara Penyelesaian Persamaan Linear Satu Variabel</h2>
+				<p>*	Dengan Cara Sifat-Sifat Kesamaan </p>
+				<p>1.	 Berapakah nilai x dari persamaan : 3(x – 1) + x = –x + 7</p>
+				<p>Jawab : </p>
+				<p>3(x – 1) + x = –x + 7</p>
+				<p>3x - 3 + x = -x + 7</p>
+				<p>4x - 3 = -x + 7</p>
+				<p>4x + x =  7 + 3</p>
+				<p>5x =  10</p>
+				<p>x =  10/5 = 2</p>
+				<p>jadi, nilai x dari persamaan di atas adalah 2.</p>
+				<p>2.	Perhatikan masalah matematika berikut:</p>
+				<p>Ida dan Dani adalah dua kakak beradik. Saat ini umur Ida 8 tahun lebih tua daripada umur Dani. Hari ini Dani genap berusia 5 tahun. Berapakah umur Ida saat ini?</p>
+				<p>Apa yang kalian ketahui tentang umur Ida? Ya, dia 8 tahun lebih tua dari Dani adiknya. Kalau kita misalkan umur Ida x tahun, apa yang kita peroleh?</p>
+				<p>Jawab :</p>
+				<p>x - 8 = umur Dani Jadi bila hari ini Dani berulangtahun yang ke 5, maka.</p>
+				<p>x – 8 = 5 </p>
+				<p>x - 8 + 8 = 5 + 8 </p>
+				<p>x + 0 = 13 </p>
+				<p>x = 13      , maka hari ini Ida berumur 13 tahun. (Endah Budi Rahaju et al., 2008)</p>
+				<p>3.	Dengan menggunakan sifat-sifat kesamaan, tentukan himpunan penyelesaian dari persamaan dberikut : p+5/2 + 2p-1/4 = 3</p>
+				<p>↔   2 (p + 5 ) + ( 2p - 1) = 3 \times\ 4	(kedua ruas dikali 4)</p>
+				<p>↔	  2p + 20 + 2p -1 = 12 	( kedua ruas di uraikan )</p>
+				<p>↔	  	      4p + 9 = 12 	</p>
+				<p>↔		4p + 9 -9  = 12 – 9	(kedua ruas di kurangi 9)</p>
+				<p>↔			4p = 3</p>
+				<p>↔			 p = 3/4</p>
+				<p>Jadi himpunan penyelesaiaannya adalah 3/4</p>
+				<p>*	Dengan Menggunakan Cara Subsitusi </p>
+				<p>1.	Tentukan himpunan penyelesaian  dari 2a + 3 = 1 untuk variabel pada himpunan bilangan cacah.</p>
+				<p>Jawab : </p>
+				<p>2a + 3 = 1</p>
+				<p>a = 0, makan 2 \times 0 + 3 = 1 ↔ 3 = 1  (kalimat salah)</p>
+				<p>a = 1, makan 2 \times 1 + 3 = 1 ↔ 5 = 1  (kalimat salah)</p>
+				<p>untuk semua a anggota bilangan cacah, ruas kiri selalu lebih besar dari ruas kanan, sehingga akan selalu di peroleh kalimat yang salah. Jadi, HP = []</p>
+				<p>2.	x + 7 = 10</p>
+				<p>Untuk x = 0, maka 0 + 7 = 10 (merupakan kalimat yang salah).</p>
+				<p>Untuk x = 1, maka 1 + 7 = 10 (merupakan kalimat yang salah). </p>
+				<p>Untuk x = 2, maka 2 + 7 = 10 (merupakan kalimat yang salah).</p>
+				<p>Untuk x = 3, maka 3 + 7 = 10 (merupakan kalimat yang benar). </p>
+				<p>Jadi, x = 3 adalah solusi dari x + 7 = 10 sehingga himpunan penyelesaian HP = {3}.</p>
+			<h2>2.4 RINGKASAN </h2>
+				<p>Kalimat terbuka adalah kalimat yang belum diketahui nilai kebenarannya. Sedangkan kalimat tertutup adalah kalimat yang sudah diketahui nilai kebenarannya. Persamaan linear satu variabel dapat dinyatakan dalam bentuk ax = b atau ax + b = c dengan a, b, dan c adalah konstanta, a ≠ 0, dan x variabel pada suatu himpunan.</p>
+				<p>Persamaan ekuivalen merupakan persamaan dengan himpunan solusi yang sama jika persamaan dapat dimasukan ke persamaan yang ekuivalen yaituu dengan cara :</p>
+				<p>1.	Tambahkan dan kurangi angka yang sama di kedua sisi.</p>
+				<p>2.	Kalikan atau bagi kedua ruas dengan bilangan bukan nol yang sama.</p>
+				<p>Langkah-langkah untuk menyelesaikan PLSV adalah sebagai berikut :</p>
+				<p>1.	Dengan menggunakan penjumlahan atau pengurangan dari suatu persamaan, kumpulkan suku-suku yang mengandung variabel di satu sisi (kiri) dan konstanta di sisi lain (kanan).</p>
+				<p>2.	Sederhanakan bentuk operasi yang terbentuk pada masing-masing segmen tersebut.</p>
+				<p>3.	Jika koefisien variabel yang diperoleh dari Langkah 2 ≠ 1   kemudian dikalikan atau dibagi kedua ruas dengan bilangan yang sama,maka dapat diperoleh koefisien satu dari variabel tersebut.</p>
+		    <h2>2.5 LATIHAN </h2>
+		    	<p>1. Dengan cara mencari persamaan persamaan yang ekuivalen, tentukan himpunan penyelesaian persamaan persamaan berikut, jika x merupakan anggota himpunan bilangan bulat!</p>
+		    	<p>a. 3x – 1 = -10</p>
+		    	<p>b. 5 + 4x = 25</p>
+		    	<p>c. 3x + 3 = 27</p>
+		    	<p>d. 7 - 6x = 19</p>
+		    	<p>e. 7x + 3 = 5x + 9</p>
+		    	<p>2. . Jika 3x + 12 = 7x – 8, maka nilai x + 2 adalah........</p>
+		    	<p>a. 7</p>
+		    	<p>b. 3</p>
+		    	<p>c. -3</p>
+		    	<p>d. -4</p>
+		    	<p>3. Jika 3(r–2) = 5(2r–4), maka nilai dari 4r + 2 adalah....</p>
+		    	<p>a. 2</p>
+		    	<p>b. 4</p>
+		    	<p>c. 10</p>
+		    	<p>d. 16</p>
+		    	<p>4. Umur Rara 4 tahun lebih tua dari umur Kiki. Sedangkan umur Sasa dua kali umur kiki. Jumlah ketiga umur mereka adalah 38 tahun. Di antara persamaan berikut yang merupakan model matematika dari permasalahan di atas adalah...</p>
+		    	<p>a.  4x + 4 = 38</p>
+		    	<p>b. 4x - 4 = 38</p>
+		    	<p>c. 3x + 4= 38</p>
+		    	<p>d. 2x + 2 = 19</p>
+		    	<p>5. Perhatikan kalimat-kalimat di bawah ini !</p>
+		    	<p> i)   2 – m = 1 </p>
+		    	<p>ii)   y adalah bilangan prima yang lebih dari 4</p>
+		    	<p>iii)  4 + b > 10</p>
+		    	<p>iv) Setelah Hari Senin adalah Hari Selasa</p>
+		    	<p>Dari kalimat di atas yang merupakan kalimat terbuka adalah......... </p>
+		    	<p>a. i, ii, iii </p>
+		    	<p>b. i, iii, iv </p>
+		    	<p>c. i, ii, iv </p>
+		    	<p>d. semua benar</p>
+		    <h2>2.6 EVALUASI</h2>
+			    <p>1. Penyelesaian dari persamaan 6 - 2x = 5x + 20 dengan x variabel pada himpunan bilangan bulat adalah………</p>
+			    <p>a. x = 2</p>
+			    <p>b. x = 1</p>
+			    <p>c. x = -2</p>
+			    <p>d. x = -1</p>
+			    <p>2. Diketahui persamaan-persamaan berikut. </p>
+			    <p>(i) 1/5 x – 3 = 1	(iii) x – 15 = 5</p>
+			    <p>(ii) x – 5 = 5 	(iv) 3x – 45 = 15</p>
+			    <p>a. (i), (ii), dan (iii)  </p>
+			    <p>b. (i), (iii), dan (iv)</p>
+			    <p>c. (i), (ii), dan (iv) </p>
+			    <p>d. (ii), (iii). dan (iv)</p>
+			    <p>3. Sebuah bis berangkat dengan 40 orang penumpang, di perjalanan turun x orang penumpang sehingga sisa penumpang 25 orang. Persamaan yang sesuai dengan kalimat ini adalah …… </p>
+			    <p>4. Carilah penyelesaian dari persamaan di bawah ini:</p>
+			    <p>a. x +3 = 9</p>
+			    <p>b. x – 5 = 8</p>
+			    <p>5. Tentukan himpunan penyelesaian persamaan :</p>
+			    <p>a. 4x + 2 = -2x + 5 	</p>
+			    <p>b. x + 2 = 2 1 (x + 1)</p>
+			<h1 class="align">SISTEM PERTIDAKSAMAAN LINEAR SATU VARIABEL</h1>
+			<h2>3.1   Pertidaksamaan Linear Satu Variabel</h2>
+			    <p>Pertidaksamaan linear dengan satu variabel adalah suatu kalimat terbuka yang hanya memuat satu variabel dengan derajat satu, yang dihubungkan oleh lambang >, ≥, <, atau ≤ . suatu pertidaksamaan dengan satu variabel yang memiliki pangkat bulat positif dan pangkat tertinggi variabelnya satu.</p>
+			    <p>Adapun contoh pada kehidupan sehari-hari yaitu sebagai berikut:</p>
+			    <img src="https://www.yuksinau.id/wp-content/uploads/2019/08/contoh-soal-dan-jawaban-persamaan-dan-pertidaksamaan-linear.jpg" width="200" height="100">
+			    <p>Kecepatan maksimum kendaraan ketika melewati jalan raya di depan sekolah adalah 30 km/ jam. Berapakah kecepatan maksimal kendaraan yang diperbolehkan? Apakah mengendarai motor dengan kecepatan 40 km/jam diperbolehkan?</p>
+			    <img src="https://slideplayer.info/slide/2414268/8/images/6/ILUSTRASI+lebih+berat+memiliki+arti+lebih+dari+dan+lebih+ringan+memiliki+arti+kurang+dari.+8+%3E+5..jpg" width="600" height="300">
+			    <p>Pada gambar di atas lebih berat memiliki arti “lebih dari”.sedangkan Lebih ringan merupakan arti dari “kurang dari”.</p>
+			    <img src="https://4.bp.blogspot.com/-XAaD6-Bv2Gg/Wl1rFpaBreI/AAAAAAAADY4/1H2_2ksluJE7WyjK_Qp5StucdF3-vqk8QCLcBGAs/s1600/garis-bilangan-pertidaksamaan-kuadrat-1.png">
+			    <p>Seperti halnya pada persamaan yang telah kalian pelajari pada sub bab materi yang pertama, pertidaksamaan pun sering dijumpai dalam masalah sehari-hari. Perhatikan masalah berikut :</p>
+			    <p>Untuk menjadi pramuka, usia kalian harus kurang dari 18 tahun. Selama 4 tahun ini, kalian masih memenuhi syarat untuk menjadi Praja Muda Karana.</p>
+			    <p>Masalah di atas tersebut dapat dengan mudah diubah menjadi pertidaksamaan linear. Menurut kalian, jika x adalah usia kalian saat ini, manakah empat pertidaksamaan berikut yang menyatakan masalah di atas?</p>
+			    <p>a.	 x + 4 > 18</p>
+			    <p>b.    x + 4 ≥ 18</p>
+			    <p>c.	 x + 4 < 18</p>
+			    <p>d.    x + 4 ≤ 18</p>
+			    <p>Bagaimanakah menyelesaikan pertidaksamaan? Dalam menyelesaikan pertidaksamaan, langkah-langkah yang digunakan sama dengan langkah langkah yang kalian gunakan untuk menyelesaikan persamaan linear variabel. Untuk memahami bagaimana bagaimana menyelesaikan masalah yang berkaitan dengan pertidaksamaan. Mari ikuti materi ini dengan baik.</p>
+			    <p>Untuk menyelesaikan masalah pertidaksamaan linear satu variabel ini, ada kalanya kita mengharuskan menggunakan sifat – sifat ketidaksamaan. Adapun beberapa sifat ketidaksaman :</p>
+			    <p>-	Sifat penjumlahan dan pengurangan :</p>
+			    <p>Ketika kalian menjumlah atau mengurangi kedua sisi dari pertidaksamaan maka tanda ketidaksamaan tidak berubah.</p>
+			    <p>Jika 𝑎 < 𝑏 maka 𝑎 + 𝑐 < 𝑏 + c</p>
+			    <p>Jika 𝑎 > 𝑏 maka 𝑎 + 𝑐 > 𝑏 + c</p>
+			    <p>Contoh : </p>
+			    <p>-4 < 2</p>
+			    <p>-4 + 3 < 2 + 3</p>
+			    <p>-1 < 5</p>
+			    <p>Jika a < b maka a - c < b – c</p>
+			    <p>Jika a > b maka a – c > b - c</p>
+			    <p>Perhatikan contoh berikut: </p>
+			    <p>-1 < 2</p>
+			    <p>-4 - 5 <  2 - 5</p>
+			    <p>-6 < -3</p>
+			    <p>Sifat ini juga berlaku untuk ≤ dan ≥.</p>
+			    <p>-	Sifat perkalian :</p>
+			    <p>Ketika kalian mengalikan kedua sisi dengan bilangan positif, maka tanda ketidaksamaan tidak berubah.</p>
+			    <p>Jika 𝑎 < b , 𝑐 > 0 maka 𝑎 . 𝑐 < 𝑏 . 𝑐</p>
+			    <p>Jika 𝑎 > b , 𝑐 > 0 maka 𝑎 . 𝑐 > 𝑏 . 𝑐</p>
+			    <p>Perhatikan contoh berikut: </p>
+			    <p>-4 < 2</p>
+			    <p>-4 . 3 <  2 . 3</p>
+			    <p>-12 < 6</p>
+			    <p>Sifat ini juga berlaku untuk ≤ dan ≥.</p>
+			    <p>Ketika kalian mengalikan kedua sisi dengan bilangan negatif , maka tanda ketidaksamaan  berubah </p>
+			    <p>Jika 𝑎 < b, 𝑐 < 0 maka 𝑎 . 𝑐 > 𝑏 . 𝑐</p>
+			    <p>Jika 𝑎 > b, 𝑐 < 0 maka 𝑎 . 𝑐 < 𝑏 . c</p>
+			    <p>Perhatikan contoh berikut: </p>
+			    <p>-4 < 2</p>
+			    <p>-4 . (-2) > 2 . (-2)</p>
+			    <p>8 > -4</p>
+			    <p>-	Sifat pembagian :</p>
+			    <p>Ketika kalian membagi kedua sisi dengan bilangan positif, maka tanda ketidaksamaan tidak berubah.</p>
+			    <p>Jika 𝑎 < b , c > 0 maka a/c < b/c</p>
+			    <p>Jika 𝑎 > b , c > 0 maka a/c > b/c</p>
+			    <p>Perhatikan contoh berikut: </p>
+			    <p>-4 < 2</p>
+			    <p>-4/3 < 2/3</p>
+			    <p>- 4/3 < 2/3</p>
+			    <p>Ketika kalian mengalikan kedua sisi dengan bilangan negatif , maka tanda ketidaksamaan  berubah.</p>
+			    <p>Jika 𝑎 > b , c > 0 maka a/c > b/c</p></p>
+			    <p>Jika 𝑎 < b , c > 0 maka a/c < b/c</p>
+			    <p>contoh :</p>
+			    <p>-4 > 2</p>
+			    <p> 4/-2  < -2/-2</p>
+			    <p>-2 < 1</p>
+			    <p>Cara menentukan himpunan penyelesaian PtLSV dapat dilakukan dengan mencari pertidaksamaan ekuivalen. Pertidaksamaan ekuivalen merupakan pertidaksamaan dengan himpunan penyelesaian yang sama jika pada pertidaksamaan tersebut dilakukan operasi tertentu. Pertidaksamaan dapat dinyatakan sebagai pertidaksamaan ekuivalen seperti:</p>
+			    <p>a.	Menambah atau mengurangi bilangan real yang sama di kedua sisi</p>
+			    <p>b.	Kalikan atau bagi kedua ruas dengan bilangan bukan nol yang sama.</p>
+			    <p>Langkah-langkah untuk menyelesaikan PtLSV adalah sebagai berikut: </p>
+			    <p>a.	 Menggunakan sifat penambahan atau pengurangan dari pertidaksamaan, kumpulkan suku-suku yang mengandung variabel di satu sisi (kiri) dan suku-suku yang mengandung konstanta di sisi lain (kanan).</p>
+			    <p>b.	Sederhanakan bentuk operasi yang terbentuk pada masing-masing segmen tersebut.</p>
+			    <p>c.	Jika koefisien variabel yang diperoleh dari langkah 2 ≠ 1  maka dengan menggunakan sifat perkalian atau pembagian pertidaksamaan, sederhanakan bentuk pertidaksamaan tersebut sehingga koefisien pada variabel tersebut </p>
+			    <p>Cara Menggambar himpunan penyelesaian dari PtLSV di Garis Bilangan Penyelesaian pertidaksamaan linier dalam satu variabel dapat dinyatakan sebagai pada garis bilangan. Berikut ini langkah-langkah menggambar garis bilangan mencari himpunan penyelesaian pertidaksamaan linear : </p>
+			    <p>a. Memecahkan pertidaksamaan linier dalam satu variabel</p>
+			    <p>b. Buat garis bilangan dengan angka sebagai batasan pada nilai x.</p>
+			    <p>c. Buat bulatan penuh (●) jika bilangan (x) pada titik tersebut termasuk anggota himpunan penyelesaian atau buat dengan bulatan kosong (○) jika bilangan (x) pada titik tersebut tidak termasuk anggota himpunan penyelesaian.</p>
+			    <p>d. Buat garis panah sepanjang titik-titik yang termasuk himpunan penyelesaian.</p>
+			<h2>3.2   Langkah-Langkah Dan Cara Penyelesaian Pertidaksamaan Linear Satu Variabel</h2>
+				<p>Perhatikan pertidaksamaan 10 - 3x > 2, dengan x variabel pada himpunan bilangan asli. Jika x diganti 1 maka 10 - 3x > 2. </p>
+				<p>↔ 10 – 3 . 1 > 2</p>
+				<p>↔ 7 > 2	( pernyataan benar )</p>
+				<p>Jika x diganti 2 maka 10 – 3x > 2,</p>
+				<p>↔ 10 – 3 × 2 > 2 </p>
+				<p>↔ 4 > 2	( pernyataan benar )</p>
+				<p>Jika x diganti 3 maka 10 – 3x > 2,</p>
+				<p>↔ 10 – 3 . 3 > 2</p>
+				<p>↔ 1 > 2 	(pernyataan salah)</p>
+				<p>Maka, x = 1 dan x = 2, pertidaksamaan 10 – 3x > 2 menjadi kalimat yang benar. Jadi, himpunan penyelesaian dari 10 – 3x > 2 adalah {1, 2} </p>
+				<p>Tentukan penyelesaian dari pertaksamaan y + 2 > 6</p>
+				<p>Penyelesaian : y + 2 > 6 </p>
+				<p>↔ y + 2 – 2 > 6 – 2  (kedua ruas dikurangi 2)</p>
+				<p>↔ y > 4</p>
+				<p>Grafiknya :</p>
+				<img src="Screenshot (203).png">
+				<p>-	Tentukan penyelesaian dari pertaksamaan : </p>
+				<p>x – 3 ≤ 2, x bilangan bulat antara -3 dan 8</p>
+				<p>jawab :</p>
+				<p>x – 3 ≤ 2</p>
+				<p>↔ x – 3 + 3 ≤ 2 +3  ( kedua ruas ditambah 3)</p>
+				<p>↔ x ≤ 5</p>
+				<p>Cara lain : </p>
+				<p>x = -2 ↔ (-2) – 3 ≤ 2</p>
+				<p>-5 ≤ (benar)	</p>
+				<p>x = -1 ↔ (-1) – 3 ≤ 2</p>
+				<p>-4 ≤ (benar)</p>
+				<p>x = 0  ↔ ( 0 ) – 3 ≤ 2	</p>
+				<p>-3 ≤ (benar)	</p>
+				<p>x = 1 ↔ (1) – 3 ≤ 2</p>
+				<p>-2 ≤ (benar)</p>
+				<p>x = 2 ↔ (2) – 3 ≤ 2</p>
+				<p>-1 ≤ (benar)	</p>
+				<p>x = 3 ↔ (3) – 3 ≤ 2	</p>
+				<p>0 ≤ (benar)</p>
+				<p>x = 4 ↔ (4) – 3 ≤ 2</p>
+				<p>1 ≤ 2 (benar)</p>
+				<p>x = 5 ↔ (5) – 3 ≤ 2</p>
+				<p>2 ≤ 2 (benar)</p>
+				<p>x = 6 ↔ (6) – 3 ≤ 2</p>
+				<p>3 ≤ 2 (salah)</p>
+				<p>Maka , penyelesaiannya adalah -2, -1, 0, 1, 2, 3, 4, 5.</p>
+				<p>-	Tentukan HP dari pertidaksamaan 4a – 4 > 6a + 8 dengan a adalah bilangan real.</p>
+				<p>Jawab:</p>
+				<p>Akan ditentukan HP dari 4a - 4 > 6a + 8</p>
+				<p>4a - 4 > 6a + 8</p>
+				<p>↔ 4a – 4 – 6a  > 6a + 8 – 6a     ( kedua ruas dikurang 6a)</p>
+				<p>↔ -2a – 4 + 4 > 8 + 4               ( kedua ruas ditambah 4 )</p>
+				<p>↔ -2a > 12        ( kedua ruas dibagi -2 )</p>
+				<p>↔    a < -6</p>
+				<p>Jadi, himpunan penyelesaiannya  [ a│a < -6, a € R ]</p>
+				<p>-	Tentukan HP dari persamaan 5x + 10 ≤ 2x – 6 dengan x adalah bilangan real</p>
+				<p>Jawab :</p>
+				<p>Akan ditentukan HP dari 7x - 10 ≤ 2x – 15.</p>
+				<p>↔ 7x - 10 – 2x ≤ 2x – 15 - -2x  ( kedua ruas dikurani -2x)</p>
+				<p>↔ 5x – 10 + 10 ≤ - 15 + 10        ( kedua ruas ditambah 10 )</p>
+				<p>↔ 5x ≤ -5         ( kedua ruas dibagi 5 )</p>
+				<p>↔ x ≤ -1 </p>
+				<p>Jadi himpunan penyelesaiannya [ x│x ≤  -1 , x € R ]</p>
+				<p>Contoh pada soal cerita :</p>
+				<p>Pak Ferdy memiliki sebuah mobil box pengangkut barang dengan daya angkut tidak lebih dari 800 kg. Berat Pak Fredy adalah 60 kg dan dia akan mengangkut kotak barang yang setiap kotak beratnya 20 kg.Tentukan banyak kotak paling banyak yang dapat diangkut oleh Pak Fredy dalam sekali pengangkutan.</p>
+				<p>Cara penyelesaian :</p>
+				<p>	Misalkan: x = banyaknya kotak barang yang diangkut dalam mobil box. Sehingga, pertidaksamaan dari situasi tersebut adalah sebagai berikut. Banyak kotak dikali berat tiap kotak ditambah berat Pak Ferdy tidak lebih dari daya angkut mobil.
+				x . 20 + 60 ≤ 800 maka, pertidaksamaan pada situasi pak Ferdi adalah  20x + 60 ≤ 800</p>
+				<p>b.	Untuk menentukan banyak kotak paling banyak yang dapat diangkut oleh mobil box Pak Ferdy adalah dengan menentukan selesaian pertidaksamaan.</p>
+				<p>20x + 60 ≤ 800</p>
+				<p>20x + 60 - 60 ≤ 800 - 60</p>
+				<p>20x ≤ 740</p>
+				<p>x ≤ 37, x paling besar yang memenuhi pertidaksamaan x ≤ 37 adalah 37.</p>
+				<p>maka, banyak kotak yang dapat diangkut Pak Fredy dalam sekali pengangkutan paling banyak 37 kotak.</p>
+			<h2>3.3 RINGKASAN </h2>
+				<p>Pertidaksamaan linear dengan satu variabel adalah suatu kalimat terbuka yang hanya memuat satu variabel dengan derajat satu, yang dihubungkan oleh lambang >, ≥, <, atau ≤ . suatu pertidaksamaan dengan satu variabel yang memiliki pangkat bulat positif dan pangkat tertinggi variabelnya satu.</p>
+				<p>Langkah-langkah untuk menyelesaikan PtLSV adalah sebagai berikut: </p>
+				<p>a.	 Menggunakan sifat penambahan atau pengurangan dari pertidaksamaan, kumpulkan suku-suku yang mengandung variabel di satu sisi (kiri) dan suku-suku yang mengandung konstanta di sisi lain (kanan).</p>
+				<p>b.	Sederhanakan bentuk operasi yang terbentuk pada masing-masing segmen tersebut.</p>
+				<p>c.	Jika koefisien variabel yang diperoleh dari langkah 2 ≠ 1  maka dengan menggunakan sifat perkalian atau pembagian pertidaksamaan, sederhanakan bentuk pertidaksamaan tersebut sehingga koefisien pada variabel tersebut </p>
+			<h2>3.4 LATIHAN </h2>
+				<p>1.  Tentukan apakah kalimat - kalimat matematika berikut merupakan ketidaksamaan atau pertidaksamaan:</p>
+				<p>a. x + y ≥ 4</p>
+				<p>b. 2 – 12 ≠ 3</p>
+				<p>c. 10 ≤ 100 – 2</p>
+				<p>d. 6 + 2x ≤ 6</p>
+				<p>2. Tentukan penyelesaian dari pertidaksamaan berikut dan gambar grafik penyelesaiannya pada garis bilangan. </p>
+				<p>a. x/2  <  -1.</p>
+				<p>b. - 2/3 x ≥ 2</p>
+				<p>c. 4x – 2 < -2 x + 10, x adalah bilangan bulat antara -1 dan 8</p>
+				<p>3. Tulislah pertidaksamaan yang dapat menyatakan hal-hal sebagai berikut: </p>
+				<p>a. Umur pengendara mobil harus 17 tahun atau lebih.</p>
+				<p>b. Di dalam kelas ada kursi lebih dari 20 buah. </p>
+				<p>c. Penumpang bis tidak boleh lebih dari 60 orang.</p>
+				<p>4. Rumah Ibu Suci dibangun di atas sebidang tanah berbentuk persegi panjang yang panjangnya 20 m dan lebarnya (6y – 1) m. Jika Luas tanah Ibu Suci tidak kurang dari 100 m2.</p>
+				<p>1.	berapakah lebar terkecil tanah ibu Suci?</p>
+				<p>2.	jika biaya untuk membangun rumah di atas tanah seluas 1m2 dibutuhkan uang Rp2.000.000,- Berapakah biaya terkecil yang harus disediakan Ibu Suci jika seluruh tanahnya dibangun?</p>
+				<p>5. Tulislah dalam simbol matematika dari kalimat berikut :</p>
+				<p>1.	Berat badan dari petinju kelas berat adalah lebih dari 125 kg</p>
+				<p>2.	Daya tahan hidup Bola lampu maksimum 1440 jam</p>
+				<p>3.	Untuk menjadi anggota DPR, usia minimal adalah 21 tahun</p>
+				<p>4.	Sebuah negara dikatakan miskin jika pendapat kotornya ( GNP ) kurang dari $300.000/ tahun</p>
+				<p>5.	Seorang pilot harus memiliki tinggi badan minimal 170 cm.</p>
+				<p>6. Tentukan apakah pernyataan berikut bernilai benar atau salah. Jelaskan jawabanmu.</p>
+				<p>a. Persamaan -2x + 3 = 8 setara dengan persamaan -2x = 1.</p>
+				<p>b. Persamaan x - (x-3) = 5x setara dengan persamaan 3 = 5x.</p>
+				<p>c. Untuk menyelesaikan 3/4 x = 12, kita harus mengalikan kedua sisi dengan 3/4 </p>
+				<p>d. Persamaan - x = -6 setara dengan .x = 6.</p>
+				<p>f. Persamaan 2(3x+4) = 6x + 12 tidak memiliki selesaian.</p>
+				<p>7.  Tentukan apakah setiap variabel yang diketahui memenuhi persamaan yang diberikan.</p>
+				<p>a. x = -4, 3x + 7 = -5</p>
+				<p>b. x = -6, -3x - 5 = 13</p>
+				<p>c. x= 12, 1/2 x - 4 = 1/3 x - 2 </p>
+				<p>d. y = 9, y-7 / 2 - 1/3 = y-7 / 2</p>
+				<p>e. x = 200, 0,2 ( x – 50 ) = 20 - 0,05x</p>
+				<p>8. Jika x adalah bilangan asli, tentukanlah himpunan penyelesaian dari persamaan linear berikut.</p>
+				<p>a. 6x + 5 = 26 - x</p>
+				<p>b. 2 - 4x = 3</p>
+				<p>c. x - 12 = 2x + 36</p>
+				<p>d. -5x - 4x + 10 = 1</p>
+				<p>e. 2 + x/4 = 5</p>
+				<p>9. Jelaskan dan perbaiki kesalahan dalam penyelesaian persamaan di bawah ini.</p>
+				<p>3x - 4 = 2x + 1</p>
+				<p>3x – 4 - 2x = 2x + 1- 2x</p>
+				<p>x - 4 = 1</p>
+				<p>x – 4 + 4 = 1 - 4</p>
+				<p>x = -3</p>
+			<h2>3.5	EVALUASI</h2>
+			    <p>1. Seorang anak mengendarai sepeda dengan kecepatan (x + 3) km/jam selama 1 jam 15 menit. Kemudian dengan kecepatan (2x – 4) km/jam selama 1 jam 30 menit. Jika jarak yang ditempuh seluruhnya tidak lebih dari 19 km, susunlah pertidaksamaan dalam x dan selesaikanlah!</p>
+				<p>2. Tentukan penyelesaiannya: </p>
+				<p>a. 2p + 6 < 4p – 2</p>
+				<p>b. 3x – 4 > 5x – 16</p>
+				<p>3.  Bentuk PtLSV dari HP ={x│x ≤ -4 ,x € R } adalah ......</p>
+				<p>4.  Himpunan penyelesaian dari -4x + 6 ≥ -x +18, dengan x bilangan bulat adalah . . . .</p>
+				<p>5.   Rumah ibu Julaiha dibangun di atas sebidang tanah berbentuk persegi panjang dengan panjang 20 m dan lebar (6y 1) m. Luas tanah ibu Julaiha tidak kurang dari 100 , maka tentukan lebar dan biaya minimal yang harus disediakan untuk membangun rumah jika biaya membangun rumah seluas 1 adalah Rp 2.000.000,00.</p>
+				<p>6. Jika p adalah variabel pada himpunan A = {1, 2, 3, 4, 5}, tentukan himpunan selesaian berikut ini dan lukiskan penyelesaiannya pada garis bilangan.</p>
+				<p>a. p < 6</p>
+				<p>b. -2p < 10</p>
+				<p>c. -2p ≤ -6</p>
+				<p>d.  2p - 4 <10</p>
+				<p>e.  5 < 3p</p>
+				<p>f . p + 5 ≥ 4</p>
+				<p>7.  Rumah Bu Suci dibangun di atas sebidang tanah berbentuk persegi panjang yang panjangnya 20 m dan lebarnya (6y-1) m. Luas tanah Ibu Suci tidak kurang dari 100 m²,</p>
+				<p>a. Berapakah lebar tanah minimal yang dimiliki Bu Suci?</p>
+				<p>b. Biaya untuk membangun rumah di atas tanah seluas 1m² dibutuhkan uang Rp2.000.000,00. Berapakah biaya minimal yang harus Bu Suci sediakan jika seluruh tanahnya dibangun?</p>
+				<p>8. Seekor paus pembunuh telah memakan 150 kg ikan hari ini. Paus pembunuh mengonsumsi sedikitnya 280 kg ikan per hari.</p>
+				<p>a. Sebuah timba mampu menampung 30 kg ikan. Tuliskan pertidaksamaan dari situasi tersebut dan tentukan selesaian yang menyatakan banyak timba yang berisi ikan untuk dimakan oleh paus tersebut.</p>
+				<p>b. Apakah boleh paus tersebut memakan ikan dalam empat atau lima timba lagi? Jelaskan.</p>
+				<p>9.	 Mobil box dapat mengangkut muatan tidak lebih dari 2.000 kg. Berat sopir dan kernetnya adalah 150 kg. Mobil box itu akan mengangkut beberapa kotak barang. Tiap kotak beratnya 50 kg.</p>
+				<p>a. Berapa paling banyak kotak yang dapat diangkut dalam sekali pengangkutan?</p>
+				<p>b. Jika mobil box akan mengangkut 350 kotak, paling sedikit berapa kali pengangkutan kotak itu akan terangkat semuanya?</p>
+				<p>10. Selesaikan pertidaksamaan 6 < 2 - 4x < 10 dengan x adalah anggota himpunan bilangan bulat.</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/3jVZcsJ9-mQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe scrolling="no" title="sistem persamaan linear satu variabel" src="https://www.geogebra.org/material/iframe/id/gphtpyhb/width/1366/height/705/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="705px" style="border:0px;"> </iframe>
+		<h1 class="align">DAFTAR PUSTAKA</h1>
+				<p>Atik Wintarti, Idris Harta, Endah Budi Rahaju, Pradnyo Wijayanti, R. Sulaiman, Sitti Maesuri, C. Yakob Masriyah, Kusrini, & Mega Teguh Budiarto. (2008). Contextual Teaching and Learning  MATEMATIKA Sekolah Menengah Pertama Madrasah Tsanawiyah  Kelas VII Edisi 4.</p>
+				<p>Dewi Nuharini, & Tri Wahyuni. (2008). MATEMATIKA KONSEP DAN APLIKASINYA Untuk SMP/MTs Kelas VII.</p>
+				<p>Endah Budi Rahaju, R. Sulaiman, Tatag Yuli Eko S, Mega Teguh Budiarto, & Kusrini. (2008). Contextual Teaching and Learning  MATEMATIKA Sekolah Menengah Pertama Madrasah Tsanawiyah  Kelas VIII Edisi 4. In Pusat Perbukuan  Departemen Pendidikan Nasional  .</p>
+				<p>Jumiati, Y., Sylviana Zanthy, L., Fikri, D., Daarul Fikri Cibaligo Cimahi, J., Barat, J., Siliwangi, I., & Terusan Jenderal Sudirman, J. (2020). ANALISIS KESALAHAN SISWA DALAM MENYELESAIKAN SOAL CERITA PERSAMAAN DAN PERTIDAKSAMAAN LINEAR SATU VARIABEL. Jurnal Pembelajaran Matematika Inovatif, 3(1). https://doi.org/10.22460/jpmi.v3i1.p11-18</p>
+				<p>Ponidi. S.Pd., & Masayuki Nugroho. S.Pd.. Gr. (2020). Matematika-MODUL 4 PERSAMAAN DAN PERTIDAKSAMAAN LINEAR SATU VARIBEL.</p>
+				<p></p>
+				<p></p>
+
+
+
+				
+
+				
+
+
+
+
+	</body>
+
+	</html>
